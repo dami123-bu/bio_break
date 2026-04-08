@@ -16,9 +16,6 @@ It does **not** assume a fully wired online RAG query path. Instead, it focuses 
 - `tests/unit/test_attack_stub_scenarios.py` — unit tests for the stub hijack scenario
 - `ATTACK_SCENARIOS_CURRENT_RAG.md` — scenario write-up for report/slides
 
-## Why the patch uses an isolated lab collection
-
-The public repo seeds a persistent `pubmed` collection. To avoid damaging that benign baseline, the attack scripts create a separate `pubmed_attack_lab` collection and copy a sample of benign docs into it before inserting malicious payloads.
 
 ## Scenarios implemented
 
