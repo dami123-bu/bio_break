@@ -1,0 +1,13 @@
+[project]
+name = "pharma-attack"
+version = "0.1.0"
+description = "Reproducible attacker-side testbench for PharmaHelp RAG/MCP attack scenarios"
+requires-python = ">=3.12"
+dependencies = [
+  "chromadb>=0.5.0",
+  "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
